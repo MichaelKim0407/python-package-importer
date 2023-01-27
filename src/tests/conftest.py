@@ -1,7 +1,4 @@
-import pytest
+from python_package_importer.pytest import PytestFixturePackageLoader
+from . import fixtures
 
-
-@pytest.fixture(scope='session')
-def example_package():
-    from . import example_package
-    return example_package
+PytestFixturePackageLoader(fixtures)(locals())
