@@ -8,6 +8,7 @@ services:
     volumes:
       - ./src:/src
       - ./README.md:/src/README.md
+      - ./LICENSE:/src/LICENSE
 
   test37:
     build:
