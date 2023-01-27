@@ -29,7 +29,9 @@ setup(
     author_email='mkim0407@gmail.com',
     description='Dynamically import all python files in a directory.',
 
-    install_requires=(),
+    install_requires=(
+        'returns-decorator',
+    ),
     extras_require={
         'dev': extra_dev,
         'cached-property': ('cached-property',),
