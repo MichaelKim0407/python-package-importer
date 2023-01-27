@@ -7,6 +7,7 @@ services:
       dockerfile: dockerfiles/dev.dockerfile
     volumes:
       - ./src:/src
+      - ./README.md:/src/README.md
 
   test37:
     build:
