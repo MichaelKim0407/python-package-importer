@@ -19,6 +19,12 @@ extra_dev = (
     *extra_test,
 )
 
+extra_ci = (
+    *extra_flake8,
+    *extra_test,
+    'coveralls',
+)
+
 setup(
     name='python-package-importer',
     version=__version__,
@@ -35,5 +41,6 @@ setup(
     extras_require={
         'dev': extra_dev,
         'cached-property': ('cached-property',),
+        'ci': extra_ci,
     },
 )
