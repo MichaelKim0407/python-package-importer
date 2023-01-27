@@ -1,0 +1,1 @@
+v_str = 'hello'
