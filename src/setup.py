@@ -34,6 +34,7 @@ setup(
     author='Michael Kim',
     author_email='mkim0407@gmail.com',
     description='Dynamically import all python files in a directory.',
+    long_description_content_type='text/markdown',
 
     install_requires=(
         'returns-decorator',
