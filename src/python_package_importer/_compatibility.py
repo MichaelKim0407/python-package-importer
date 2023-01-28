@@ -1,5 +1,3 @@
-import typing
-
 # < 3.8
 try:
     from functools import cached_property
@@ -8,6 +6,6 @@ except ImportError:  # pragma: no cover
 
 # < 3.10
 try:
-    TypeAlias = typing.TypeAlias
-except AttributeError:  # pragma: no cover
-    TypeAlias = typing.Any
+    from typing import TypeAlias
+except ImportError:  # pragma: no cover
+    from typing import Any as TypeAlias  # noqa: F401
