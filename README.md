@@ -14,6 +14,12 @@ Utility for dynamically importing a Python package.
 pip install python-package-importer
 ```
 
+If running Python < 3.8, please install with dependency:
+
+```bash
+pip install python-package-importer[cached-property]
+```
+
 ## Usage
 
 ### class `python_package_importer.importer.PythonPackageImporter`
