@@ -5,6 +5,10 @@ from setuptools import setup, find_packages
 from python_package_importer import __version__
 
 project_dir = Path(__file__).parent
+try:
+    long_description = (project_dir / 'README.md').read_text()
+except FileNotFoundError:
+    long_description = ''
 
 extra_flake8 = (
     'flake8',
@@ -38,7 +42,7 @@ setup(
     author='Michael Kim',
     author_email='mkim0407@gmail.com',
     description='Dynamically import all python files in a directory.',
-    long_description=(project_dir / 'README.md').read_text(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
 
     install_requires=(
